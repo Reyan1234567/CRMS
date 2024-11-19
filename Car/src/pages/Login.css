@@ -1,0 +1,66 @@
+:root {
+  --bs-primary: #e97400f2;
+}
+.Hero {
+  background-color: rgb(47, 103, 195);
+  padding: 0;
+}
+.Login {
+  padding: 200px;
+  height: 100vh;
+  width: 100vw;
+}
+.Zero {
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+  margin: 0;
+}
+
+form {
+  text-align: left;
+  padding: 0 30px;
+}
+input::placeholder {
+  font-weight: 100;
+  color: rgb(172, 172, 172);
+}
+.login {
+  width: 100%;
+  background-color: rgb(47, 103, 195);
+}
+img {
+  margin-bottom: 20px;
+  width: 100px;
+}
+label {
+  text-align: end;
+}
+.Remember {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+span img {
+  margin: 0;
+  padding: 0;
+  width: 25px;
+}
+.conta {
+  border-radius: 5px;
+}
+.input-group-append {
+  position: relative;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.input-group-text {
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
