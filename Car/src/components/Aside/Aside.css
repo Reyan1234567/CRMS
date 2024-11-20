@@ -1,0 +1,23 @@
+ul{
+    position:relative;
+    list-style: none;
+    padding:0;
+}
+li{
+    padding:10px;
+}
+
+li:hover{
+    cursor:pointer;
+    border-radius:5px;
+    background-color: #e3f2fd;
+}
+
+.clicked{
+    position: absolute;
+    left: 0;
+    opacity:0;
+}
+Link{
+    list-style: none;
+}

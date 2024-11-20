@@ -1,0 +1,28 @@
+body{
+    width:100vw;
+    height:100vh
+}
+
+.table {
+  width: 100%;
+}
+
+.center {
+  width: 100%;
+  flex: 1;
+}
+
+.cont2 {
+  width: 100%;
+  padding: 20px;
+}
+
+.add-driver-form {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1000px;
+  z-index: 1000;
+}
