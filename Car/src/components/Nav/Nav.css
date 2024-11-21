@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e293b; /* Dark blue-gray */
+    color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom:2%;
+  }
+  
+  .menu-btn {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f1f5f9;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-section .username {
+    font-size: 1rem;
+    color: #e2e8f0;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-title {
+      font-size: 1.2rem;
+    }
+  
+    .profile-section .username {
+      display: none; /* Hide username on smaller screens */
+    }
+  }
+  

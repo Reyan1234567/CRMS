@@ -12,14 +12,14 @@ const Aside = ({ Clicked }: { Clicked: boolean }) => {
     <>
       <ul>
 
-        <Link to="/Dashboard">
+        <Link to="/Dashboard" className="link">
         <li>
           <FaHome size="30" />{" "}
           {Clicked ? <span>Home</span> : <span className="clicked">Home</span>}
         </li>
         </Link>
 
-        <Link to="/Staff_management">
+        <Link to="/Staff_management" className="link">
           <li>
             <MdAccountCircle size="30" />{" "}
             {Clicked ? (
@@ -30,7 +30,7 @@ const Aside = ({ Clicked }: { Clicked: boolean }) => {
           </li>
         </Link>
 
-        <Link to="/Vehicle">
+        <Link to="/Vehicle" className="link">
         <li>
           <FaCar size="30" />{" "}
           {Clicked ? (
@@ -41,7 +41,7 @@ const Aside = ({ Clicked }: { Clicked: boolean }) => {
         </li>
         </Link>
 
-        <Link to="/Driver">
+        <Link to="/Driver" className="link">
         <li>
           <PiSteeringWheelFill size="30" />{" "}
           {Clicked ? (
@@ -52,7 +52,7 @@ const Aside = ({ Clicked }: { Clicked: boolean }) => {
         </li>
         </Link>
 
-        <Link to="/Inspection">
+        <Link to="/Inspection" className="link">
         <li>
           <HiMiniWrenchScrewdriver size="30" />{" "}
           {Clicked ? (
@@ -63,7 +63,7 @@ const Aside = ({ Clicked }: { Clicked: boolean }) => {
         </li>
         </Link>
 
-        <Link to="/Price">
+        <Link to="/Price" className="link">
         <li>
           <MdPriceChange size="30" />{" "}
           {Clicked ? (
