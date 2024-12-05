@@ -5,21 +5,30 @@ import { PiSteeringWheelFill } from "react-icons/pi";
 import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 import { MdPriceChange } from "react-icons/md";
 import "./Aside.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Aside = ({ Clicked }: { Clicked: boolean }) => {
   return (
     <>
       <ul>
+        <NavLink
+          to="/Dashboard"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          <li>
+            <FaHome size="30" />{" "}
+            {Clicked ? (
+              <span>Home</span>
+            ) : (
+              <span className="clicked">Home</span>
+            )}
+          </li>
+        </NavLink>
 
-        <Link to="/Dashboard" className="link">
-        <li>
-          <FaHome size="30" />{" "}
-          {Clicked ? <span>Home</span> : <span className="clicked">Home</span>}
-        </li>
-        </Link>
-
-        <Link to="/Staff_management" className="link">
+        <NavLink
+          to="/Staff_management"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
           <li>
             <MdAccountCircle size="30" />{" "}
             {Clicked ? (
@@ -28,51 +37,63 @@ const Aside = ({ Clicked }: { Clicked: boolean }) => {
               <span className="clicked">Staff Management</span>
             )}
           </li>
-        </Link>
+        </NavLink>
 
-        <Link to="/Vehicle" className="link">
-        <li>
-          <FaCar size="30" />{" "}
-          {Clicked ? (
-            <span>Vehicle</span>
-          ) : (
-            <span className="clicked">Vehicle</span>
-          )}
-        </li>
-        </Link>
+        <NavLink
+          to="/Vehicle"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          <li>
+            <FaCar size="30" />{" "}
+            {Clicked ? (
+              <span>Vehicle</span>
+            ) : (
+              <span className="clicked">Vehicle</span>
+            )}
+          </li>
+        </NavLink>
 
-        <Link to="/Driver" className="link">
-        <li>
-          <PiSteeringWheelFill size="30" />{" "}
-          {Clicked ? (
-            <span>Driver</span>
-          ) : (
-            <span className="clicked">Driver</span>
-          )}
-        </li>
-        </Link>
+        <NavLink
+          to="/Driver"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          <li>
+            <PiSteeringWheelFill size="30" />{" "}
+            {Clicked ? (
+              <span>Driver</span>
+            ) : (
+              <span className="clicked">Driver</span>
+            )}
+          </li>
+        </NavLink>
 
-        <Link to="/Inspection" className="link">
-        <li>
-          <HiMiniWrenchScrewdriver size="30" />{" "}
-          {Clicked ? (
-            <span>Inspection</span>
-          ) : (
-            <span className="clicked">Inspection</span>
-          )}
-        </li>
-        </Link>
+        <NavLink
+          to="/Inspection"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          <li>
+            <HiMiniWrenchScrewdriver size="30" />{" "}
+            {Clicked ? (
+              <span>Inspection</span>
+            ) : (
+              <span className="clicked">Inspection</span>
+            )}
+          </li>
+        </NavLink>
 
-        <Link to="/Price" className="link">
-        <li>
-          <MdPriceChange size="30" />{" "}
-          {Clicked ? (
-            <span>Price</span>
-          ) : (
-            <span className="clicked">Price</span>
-          )}
-        </li>
-        </Link>
+        <NavLink
+          to="/Price"
+          className={({ isActive }) => (isActive ? "link active" : "link")}
+        >
+          <li>
+            <MdPriceChange size="30" />{" "}
+            {Clicked ? (
+              <span>Price</span>
+            ) : (
+              <span className="clicked">Price</span>
+            )}
+          </li>
+        </NavLink>
       </ul>
     </>
   );
